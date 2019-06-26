@@ -8,6 +8,11 @@
 	padding: 0 15px
 
 
+.main
+	padding-top: 100px
+	background: #ebebeb
+
+
 .link
 	position: relative
 	z-index: 1
@@ -48,6 +53,10 @@
 		padding: 5px 0
 		background: rgba($accent, .95)
 		box-shadow: 0 0 10px 0 rgba($accent, 1)
+
+	&--page
+		background: $accent
+
 
 	&__container
 		position: relative
@@ -225,7 +234,7 @@
 		span
 			position: absolute
 			display: inline-block
-			left: 0
+			left: -100%
 			top: 0
 			opacity: 0
 			box-shadow: 0 0 18px rgba(0, 0, 0, 0.35)
@@ -559,6 +568,15 @@
 
 			&::before
 				display: none
+
+
+.shop__button
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 50px
+
+	h2
+		margin-bottom: 30px
 
 
 @import "page"

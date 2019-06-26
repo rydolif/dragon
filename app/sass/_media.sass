@@ -134,11 +134,13 @@
 	.container
 		max-width: 992px
 
+	.main
+		padding-top: 70px
+
 	.header__info
 		&_tel,
 		&_time
 			margin-right: 20px
-
 
 
 	.hero
@@ -224,12 +226,14 @@
 			display: flex
 			flex-direction: column
 			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
+			margin: 40px
 
 		li
 			margin: 0
 			margin-bottom: 10px
+
+			&:last-child
+				margin-bottom: 0
 
 		a
 			color: #fff
@@ -317,6 +321,17 @@
 
 	.popular__item_button input
 		margin: 0 1px
+	
+	.shop__button
+		margin-bottom: 30px
+
+	.btn--list
+		margin-bottom: 5px
+		margin-right: 5px
+		height: 40px
+		line-height: 40px
+		padding: 0 10px
+		font-size: 16px
 
 
 @media only screen and (max-width : 576px)
@@ -328,6 +343,16 @@
 	
 
 @media only screen and (max-width : 480px)
+	.shop
+		&__button
+			margin-bottom: 15px
+
+		h2
+			margin-bottom: 20px
+
+	.main
+		padding-top: 40px
+
 	.header
 		&--active,
 		&--menu
@@ -349,6 +374,18 @@
 
 		&__info
 			display: block
+			margin: 40px
+
+			&_tel,
+			&_time
+				display: block
+				margin-bottom: 15px
+				color: #FFF
+				font-size: 18px
+
+				a
+					display: inline-block
+
 
 	.footer
 		&__container

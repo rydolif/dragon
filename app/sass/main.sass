@@ -12,6 +12,8 @@
 	padding-top: 100px
 	background: #ebebeb
 
+.blog
+	background: #fff
 
 .link
 	position: relative
@@ -570,13 +572,77 @@
 				display: none
 
 
-.shop__button
-	display: flex
-	flex-wrap: wrap
-	margin-bottom: 50px
+.shop
+	padding-top: 55px
+	padding-bottom: 65px
+
+	&__button
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 50px
 
 	h2
 		margin-bottom: 30px
+
+
+.blog
+
+	h3
+		margin-bottom: 30px
+		font-size: 30px
+
+	p
+		margin-bottom: 60px
+
+	img
+		width: 100%
+		height: auto
+
+	&__item
+		padding: 0
+		border: none
+		justify-content: flex-start
+
+		&:hover,
+		&:focus
+			box-shadow: 0 0 13px rgba(0, 0, 0, 0.13)
+			transition: all .3s
+
+			a
+				opacity: 1
+
+
+		&_content
+			padding: 30px 20px 40px 20px
+			font-size: 20px
+			color: #606060
+			line-height: 1.2
+
+		&_footer
+			display: flex
+			justify-content: space-between
+
+		a
+			position: relative
+			padding-right: 25px
+			color: $accent
+			opacity: 0
+			transition: all .3s
+
+			&::before
+				content: ''
+				position: absolute
+				right: 0
+				top: 50%
+				display: block
+				width: 13px
+				height: 13px
+				border-top: 1px solid $accent
+				border-right: 1px solid $accent
+				transform: translate(0, -50%) rotate(45deg)
+	
+
+
 
 
 @import "page"

@@ -2,12 +2,12 @@
 
 
 //----------------------fonts---------------------
-$fonts: 'GothamPro', sans-serif
-// $fw: 'Font Awesome 5 Brands', sans-serif
+$fonts: 'Circe', sans-serif
+$title-fonts: 'Oswald', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
-$accent: #000
+$accent: #de0640
 $text: #000
 $btn: #666
 $title: #333
@@ -38,9 +38,21 @@ section
 	
 h1, h2, h3, h4, h5, h6
 	font-weight: 700
-	line-height: 1.4
+	line-height: 1.1
 	margin: 0
 	padding: 0
+
+h2
+	font-family: $title-fonts
+	font-size: 42px
+	font-weight: 300
+	color: #474747
+
+h3
+	font-size: 36px
+	color: #363636
+	font-weight: 400
+	line-height: 1
 
 ul
 	margin: 0
@@ -96,6 +108,13 @@ input:-ms-input-placeholder /* IE 10+ */
 input:-moz-placeholder /* Firefox 18- */
   line-height: 50px
 
+input[type='number']
+    -moz-appearance: textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+
 textarea
 	&::placeholder
 		line-height: 1.4
@@ -115,6 +134,8 @@ button:focus,
 button:hover,
 	outline: none
 	text-decoration: none
+
+
 
 
 

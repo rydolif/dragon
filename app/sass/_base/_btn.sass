@@ -4,24 +4,58 @@
 	height: 50px
 	border: none
 	outline: none
-	padding: 0 30px
-	border-radius: 4px
-	background: #fff
+	padding: 0 35px
+	border-radius: 25px
+	border: 1px solid #fff
+	background: transparent
+	transition: all .6s
 	text-align: center
-	text-transform: uppercase
-	font-size: 12px
-	color: #000
+	color: #fff
 	line-height: 50px
-	font-weight: 700
 	letter-spacing: .2px
+	font-size: 20px
+	
 
 	&:hover,
 	&:focus
 		outline: none
-		border: none
 		text-decoration: none
 		cursor: pointer
-		transition: all .3s
-		box-shadow: 0 5px 10px rgba($text, .4)
-		color: #000
+		color: $accent
+		background: #fff
+
+	&--hero
+
+	
+	&--shop
+		height: 45px
+		line-height: 45px
+		border-radius: 15px
+		border: 1px solid #d8012d
+		background-color: #ffffff
+		color: $accent
+		padding-left: 55px
+
+		&:hover,
+		&:focus
+			color: #fff
+			background: $accent
+
+			&::before
+				background-image: url(../img/cart.png)
+
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 20px
+			transform: translate(0, -50%)
+			width: 25px
+			height: 22px
+			background-image: url(../img/shop--cart.png)
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			transition: all .6s
+
 

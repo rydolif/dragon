@@ -4,6 +4,7 @@
 //----------------------fonts---------------------
 $fonts: 'Circe', sans-serif
 $title-fonts: 'Oswald', sans-serif
+$text-fonts: 'Raleway', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
@@ -136,7 +137,23 @@ button:hover,
 	text-decoration: none
 
 
+select
+	border: none
+	height: 45px
+	border-radius: 15px
+	border: 1px solid #b7b7b7
+	outline: none
+	color: #606060
+	padding: 0 20px
+	font-family: $text-fonts
 
+	&:hover,
+	&:focus
+		outline: none
+
+option
+	color: #606060
+	font-family: $text-fonts
 
 
 @import "_base/preloader"

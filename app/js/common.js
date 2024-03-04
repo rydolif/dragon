@@ -7,16 +7,16 @@ $(function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     breakpoints: {
     480: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10
     },
     993: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20
     }
   }
